@@ -1,4 +1,4 @@
-SampleApp::Application.configure do
+MyClub::Application.configure do
   # Speed up tests by lowering BCrypt's cost function.
   require 'bcrypt'
   silence_warnings do

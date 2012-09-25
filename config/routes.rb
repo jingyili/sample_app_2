@@ -1,4 +1,4 @@
-SampleApp::Application.routes.draw do
+MyClub::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
 
