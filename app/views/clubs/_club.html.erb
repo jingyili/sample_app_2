@@ -1,0 +1,12 @@
+<li>
+  <span class="name"><b><%= club.name %></b></span>
+  <span class="description"><%= club.description %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(club.created_at) %> ago.
+  </span>
+  <% if current_user?(club.user) %>
+      <%= link_to "delete", club, method: :delete,
+                  data: { confirm: "You sure?" },
+                  title: club.name %>
+  <% end %>
+</li>
